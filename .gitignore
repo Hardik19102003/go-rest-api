@@ -1,6 +1,6 @@
 # If you prefer the allow list template instead of the deny list, see community template:
 # https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
@@ -17,9 +17,33 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
-# Go workspace file
+# Go workspace files
 go.work
 go.work.sum
 
-# env file
+# Go module cache (only useful for local development)
+go.sum
+
+# Env files
 .env
+.env.*
+
+# IDE-specific files (GoLand, JetBrains)
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# macOS system files
+.DS_Store
+
+# Build artifacts
+*.a
+*.o
+*.pyc
+*.pyo
+*.pyd
+
+# Go build cache
+/tmp/
