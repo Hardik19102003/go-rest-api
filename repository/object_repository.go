@@ -1,7 +1,6 @@
 package repository
 
 import (
-	"database/sql"
 	"log"
 
 	"github.com/Hardik19102003/go-rest-api/config"
