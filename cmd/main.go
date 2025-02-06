@@ -1,21 +1,19 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 
 	"github.com/Hardik19102003/go-rest-api/config"
+	"github.com/Hardik19102003/go-rest-api/routes"
 )
 
 func main() {
 	// Initialize the database
 	config.InitDB()
 
-	// Temporary test route to check if API is running
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintln(w, "🚀 Go REST API is running!")
-	})
+	// Set up routes
+	routes.SetupRoutes()
 
 	// Start server
 	port := ":8080"
